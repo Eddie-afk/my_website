@@ -1,289 +1,546 @@
-/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
-/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
- @media only screen and (min-width: 768px) and (max-width: 991px) {
-     .main-menu ul>li a {
-         padding: 20px 20px 20px;
-    }
-     .header-search {
-         padding: 15px 0px;
-    }
-}
-/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
- @media only screen and (min-width: 599px) and (max-width: 767px) {
-     .logo {
-         text-align: center;
-    }
-     .cart-content-right {
-         padding-bottom: 5px;
-    }
-     .mg {
-         margin: 0px 0px;
-    }
-     .menu-area-main {
-         height: 256px;
-         overflow-y: auto;
-    }
-     .megamenu>.row [class*="col-"] {
-         padding: 0px;
-    }
-     .menu-area-main .megamenu .men-cat {
-         padding: 0px 15px;
-    }
-     .menu-area-main .megamenu .women-cat {
-         padding: 0px 15px;
-    }
-     .menu-area-main .megamenu .el-cat {
-         padding: 0px 15px;
-    }
-     .mean-container .mean-nav ul li a.mean-expand {
-         height: 19px;
-    }
-     .category-box.women-box {
-         display: none;
-    }
-     .cart-box {
-         display: inline-block;
-         margin: 0px 30px;
-    }
-     .wish-box {
-         float: none;
-         margin: 0px 30px;
-         display: inline-block;
-    }
-     .menu-add {
-         display: none;
-    }
-     .category-box {
-         display: none;
-    }
-     .mean-container .mean-nav ul li ol {
-         padding: 0px;
-    }
-     .mean-container .mean-nav ul li a {
-         padding: 10px 20px;
-         width: 94.8%;
-    }
-     .mean-container .mean-nav ul li li a {
-         width: 92%;
-         padding: 1em 4%;
-    }
-     .mean-container .mean-nav ul li li li a {
-         width: 100%;
-    }
-     .header-search {
-         padding: 15px 0px;
-    }
-     #collapseFilter.d-md-block {
-         padding: 30px 0px;
-    }
-}
-/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
- @media only screen and (min-width: 280px) and (max-width: 599px) {
-     .cart-content-right {
-         padding-bottom: 5px;
-    }
-     .megamenu>.row [class*="col-"] {
-         padding: 0px;
-    }
-     .menu-area-main .megamenu .men-cat {
-         padding: 0px 15px;
-    }
-     .menu-area-main .megamenu .women-cat {
-         padding: 0px 15px;
-    }
-     .menu-area-main .megamenu .el-cat {
-         padding: 0px 15px;
-    }
-     .mean-container .mean-nav ul li a {
-         padding: 1em 4%;
-         width: 92%;
-    }
-     .mean-container .mean-nav ul li li a {
-         width: 90%;
-         padding: 1em 5%;
-    }
-     .mean-container .sub-full.megamenu-categories ol li a {
-         padding: 5px 0px;
-         text-transform: capitalize;
-         width: 100%;
-    }
-     .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
-         width: auto;
-         border: none;
-         float: none;
-    }
-     .menu-area-main {
-         height: 290px;
-         overflow-y: auto;
-    }
-     .mean-container .mean-nav ul li a.mean-expand {
-         top: 0;
-    }
-}
- @media (min-width: 1200px) and (max-width: 1500px) {
-     .banner-main .carousel-caption {
-         background: transparent;
-    }
-    .text-bg h1 {font-size: 60px; line-height: 64px;}
-}
- @media (min-width: 992px) and (max-width: 1199px) {
-     .text-bg {
-         padding-left: 30px;
-    }
-    .text-img figure img {max-width: 735px;} 
-    .text-bg {
+/*---------------------------------------------------------------------
+    RESPONSIVE CSS
+---------------------------------------------------------------------*/
+
+/* =====================================================
+   TABLETAS GRANDES Y LAPTOPS PEQUEÑAS
+   992px a 1199px
+   ===================================================== */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .text-bg {
+    padding-left: 30px;
     padding-top: 160px;
+  }
+
+  .text-bg h1 {
+    padding-top: 180px;
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  .text-bg span {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .header-top {
+    background-position: center top;
+  }
+
+  .testimonial {
+    padding: 100px 60px;
+  }
 }
-     .text-bg h1 {
-         padding-top: 218px;
-         font-size: 43px;
-         line-height: 54px;
-         padding-bottom: 10px;
-    }
-     .text-bg span {
-        padding-bottom: 13px;
-    }
-     .submit {
-        padding: 14px 0px;
-         max-width: 231px;
-    }
+
+/* =====================================================
+   TABLETAS
+   768px a 991px
+   ===================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-top {
+    min-height: 700px;
+    background-position: center top;
+  }
+
+  .header {
+    padding: 25px 20px;
+  }
+
+  .slider_section {
+    padding-top: 130px;
+  }
+
+  .main-menu ul > li a {
+    padding: 12px 10px;
+    padding-left: 15px;
+    font-size: 13px;
+  }
+
+  .text-bg {
+    display: block;
+    padding-top: 100px;
+    padding-left: 15px;
+  }
+
+  .text-bg h1 {
+    padding-top: 60px;
+    font-size: 48px;
+    line-height: 55px;
+  }
+
+  .text-bg span {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .titlepage h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .our .Games h3 {
+    font-size: 38px;
+  }
+
+  .our .Games p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .our .two-box figure,
+  .our .two-box.anima figure {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .our .two-box figure img,
+  .our .two-box.anima figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  .lista li {
+    padding: 8px;
+    margin-top: 0;
+  }
+
+  .box_bg {
+    padding: 20px;
+  }
+
+  .box_text {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .box_text p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .plataforma li {
+    padding: 12px 0;
+    margin-top: 0;
+  }
+
+  .testimonial {
+    padding: 80px 35px;
+  }
+
+  .testimonial .clients_box p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
- @media (min-width: 768px) and (max-width: 991px) {
-      .text-img figure img {max-width: 490px;} 
-    .text-bg {
-    padding-top: 224px;
+
+/* =====================================================
+   CELULARES GRANDES
+   576px a 767px
+   ===================================================== */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header-top {
+    min-height: auto;
+    padding-bottom: 60px;
+    background-position: center top;
+  }
+
+  .header {
+    position: relative;
+    padding: 20px 15px;
+  }
+
+  .logo {
+    float: none;
+    text-align: center;
+  }
+
+  .logo img {
+    max-width: 180px;
+    height: auto;
+  }
+
+  .slider_section {
+    padding-top: 15px;
+  }
+
+  .padding_left0 {
+    padding-left: 15px;
+  }
+
+  .main-menu {
+    width: 100%;
+  }
+
+  .main-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-menu ul > li {
+    display: block;
+    width: 50%;
+    text-align: center;
+  }
+
+  .main-menu ul > li a {
+    padding: 10px 5px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .text-bg {
+    display: block;
+    padding: 35px 15px 0;
+    text-align: center;
+  }
+
+  .text-bg h1 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .text-bg span {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 15px;
+  }
+
+  .our,
+  .We_are,
+  .about {
+    padding-top: 55px;
+  }
+
+  .titlepage {
+    padding-bottom: 35px;
+  }
+
+  .titlepage h2 {
+    font-size: 35px;
+    line-height: 42px;
+  }
+
+  .our .two-box figure,
+  .our .two-box.anima figure {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .our .two-box figure img,
+  .our .two-box.anima figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  .our .Games h3 {
+    padding-top: 15px;
+    font-size: 34px;
+  }
+
+  .our .Games p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .lista li {
+    padding: 8px 10px;
+    margin-top: 0;
+  }
+
+  .box_bg {
+    padding: 15px;
+  }
+
+  .box_text {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .box_text p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .plataforma li {
+    padding: 12px 0;
+    margin-top: 0;
+  }
+
+  .about .about-box video {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonial {
+    padding: 60px 25px;
+  }
+
+  .testimonial .clients_box p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
-.header-top {min-height: inherit;}
-     .main-menu ul>li a {
-         padding: 8px 12px 8px 12px;
-    }
-     .full-slider_cont h1 {
-         font-size: 40px;
-         line-height: 50px;
-    }
-     .text-bg h1 {
-         padding-top: 0px;
-    font-size: 33px;
-    line-height: 46px;
-    padding-bottom: 5px;
-    }
-     .b_bold {
-         font-size: 53px;
-    }
-     .text-bg span {
-        padding-bottom: 12px;
-        font-size: 14px;
-    }
-     .text-bg a {
-        margin-right: 5px;
-         padding: 10px 23px;
-    }
-     .text-bg {
-         padding-left: 50px;
-    }
-     .submit {
-        padding: 14px 0px;
-         max-width: 170px;
-    }
-     .address {
-         margin-bottom: 30px;
-    }
+
+/* =====================================================
+   CELULARES PEQUEÑOS
+   575px o menos
+   ===================================================== */
+
+@media (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-top {
+    min-height: auto;
+    padding-bottom: 45px;
+    background-position: center top;
+  }
+
+  .header {
+    position: relative;
+    padding: 20px 10px;
+  }
+
+  .logo {
+    float: none;
+    text-align: center !important;
+    padding-bottom: 15px;
+  }
+
+  .logo img {
+    max-width: 160px;
+    width: 100%;
+    height: auto;
+  }
+
+  .slider_section {
+    padding-top: 10px;
+  }
+
+  .padding_left0 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .main-menu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-menu ul > li {
+    display: block;
+    width: 50%;
+    text-align: center;
+  }
+
+  .main-menu ul > li a {
+    padding: 9px 4px;
+    padding-left: 4px;
+    font-size: 11px;
+    line-height: 17px;
+  }
+
+  .main-menu ul > li:first-child {
+    margin-left: 0;
+  }
+
+  .text-bg {
+    display: block;
+    padding: 30px 10px 0;
+    text-align: center;
+  }
+
+  .text-bg h1 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  .text-bg span {
+    font-size: 14px;
+    line-height: 22px;
+    padding-bottom: 10px;
+  }
+
+  /* Secciones */
+  .our,
+  .We_are,
+  .about {
+    padding-top: 45px;
+  }
+
+  .titlepage {
+    padding-bottom: 30px;
+  }
+
+  .titlepage h2 {
+    font-size: 29px;
+    line-height: 36px;
+  }
+
+  .margin_bottom {
+    margin-bottom: 30px;
+  }
+
+  /* Imágenes de información */
+  .our .two-box figure,
+  .our .two-box.anima figure {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  .our .two-box figure img,
+  .our .two-box.anima figure img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Textos de información */
+  .our .Games {
+    text-align: left;
+  }
+
+  .our .Games h3 {
+    padding-top: 15px;
+    font-size: 29px;
+    line-height: 36px;
+  }
+
+  .our .Games p {
+    font-size: 14px;
+    line-height: 23px;
+    padding: 5px 0;
+  }
+
+  .lista li {
+    font-size: 14px;
+    padding: 8px 5px;
+    margin-top: 0;
+  }
+
+  /* Plataformas */
+  .box_bg {
+    padding: 10px;
+  }
+
+  .box_bg_img figure {
+    margin: 0;
+    padding-top: 5px;
+  }
+
+  .box_bg_img figure img {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .box_text {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 10px;
+  }
+
+  .box_text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .plataforma li {
+    font-size: 13px;
+    padding: 10px 0;
+    margin-top: 0;
+    line-height: 22px;
+  }
+
+  .plataforma a {
+    display: inline-block;
+    margin-left: 3px;
+  }
+
+  /* Video */
+  .about .about-box video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Desarrollador */
+  .testimonial {
+    padding: 45px 15px;
+  }
+
+  .testimonial_box {
+    padding-bottom: 15px;
+  }
+
+  .testimonial_box figure img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .testimonial .clients_box h3 {
+    padding-top: 10px;
+    font-size: 25px;
+  }
+
+  .testimonial .clients_box p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+  /* Pie de página */
+  .copyright {
+    padding: 15px 10px;
+    margin-top: 20px;
+  }
+
+  .copyright p {
+    font-size: 13px;
+    line-height: 21px;
+    padding-top: 10px;
+  }
 }
- @media (min-width: 576px) and (max-width: 767px) {
-     .mean-container .mean-bar {
-         margin-top: 0px;
-    }
-     .slider_section {
-        padding-top: 105px;
-    }
-    .text-img {padding-top: 40px;}
-    .header-top {min-height: inherit;}
-     .text-img figure img {width: 100%;}
-    .text-bg {display: none;}
-     .text-img {
-        padding-top: 30px;
-    }
-     ul.top_icon li a {
-        padding: 0px 6px;
-    }
-     .padding_left0 {
-        padding-left: 15px;
-    }
-     .menu-area-main li.active a {
-        background: inherit;
-    }
-     .testimonial_box {
-        padding-bottom: 20px;
-    }
-     .testimonial .clients_box h3 {
-        padding-top: 0px;
-    }
-     .our .Games h3 {
-        padding-top: 20px;
-    }
-     .submit {
-        padding: 14px 0px;
-         max-width: 154px;
-    }
-     .address {
-        padding-bottom: 20px;
-    }
-}
- @media (max-width: 575px) {
-     .header {
-         padding-bottom: 0px;
-    }
-     .logo {
-         text-align: center !important;
-         padding-bottom: 25px;
-         float: inherit;
-    }
-     .menu-area-main li.active a {
-        background: inherit;
-    }
-    .text-img {padding-top: 40px;}
-    .header-top {min-height: inherit;}
-    .text-img figure img {width: 100%;}
-   .text-bg {display: none;}
-     .slider_section {
-        padding-top: 95px;
-    }
-     ul.top_icon {
-        display: none;
-    }
-     .titlepage h2 {
-        line-height: 33px;
-         font-size: 33px;
-    }
-     .padding_left0 {
-        padding-left: 15px;
-    }
-     .our .Games h3 {
-        padding-top: 20px;
-    }
-     .testimonial_box {
-        padding-bottom: 20px;
-    }
-     .testimonial .clients_box h3 {
-        padding-top: 0px;
-    }
-     .testimonial .clients_box p {
-        font-size: 15px;
-    }
-     .contact .contact_bg {
-        padding: 40px 20px;
-    }
-     .submit {
-        font-size: 15px;
-         padding: 14px 0px;
-         max-width: 134px;
-    }
-     .news .newslatter {
-        padding: 14px 10px;
-         width: 54%;
-         font-size: 15px;
-    }
-     .address {
-        padding-bottom: 20px;
-    }
+/* CORRECCIÓN DEL MENÚ EN CELULARES */
+@media (max-width: 767px) {
+  .main-menu ul > li {
+    width: 100%;
+    background-color: #ff0000 !important;
+    display: block;
+  }
+
+  .main-menu ul > li a {
+    display: block;
+    width: 100%;
+    background-color: #ff0000 !important;
+    color: #ffffff !important;
+    padding: 15px 20px;
+  }
+
+  .main-menu ul > li:first-child {
+    background-color: #ff0000 !important;
+  }
+
+  .main-menu ul > li:hover,
+  .main-menu ul > li a:hover {
+    background-color: #cc0000 !important;
+  }
 }
